@@ -13,9 +13,14 @@ public class LentaPage {
      * Кнопка перехода на вкладку с видео
      */
     private final SelenideElement videoPage = $x("//a[@href='/video/top']");
+    private final SelenideElement bookmarks = $x("//*[contains(@href, '/bookmarks')]");
 
-    public void clickToVideo() {
+    public void goToVideo() {
         videoPage.click();
+    }
+
+    public void goToBookmarks() {
+        bookmarks.click();
     }
 
 }
