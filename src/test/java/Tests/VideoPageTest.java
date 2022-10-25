@@ -2,6 +2,7 @@ package Tests;
 
 import Pages.LentaPage;
 import Pages.LoginPage;
+import Pages.VideosPage;
 import org.junit.Test;
 
 public class VideoPageTest extends BaseTest{
@@ -21,7 +22,8 @@ public class VideoPageTest extends BaseTest{
         loginPage.pressInputButton();
         LentaPage lentaPage = new LentaPage();
         lentaPage.clickToVideo();
-        System.out.println();
+        VideosPage videosPage = new VideosPage();
+        videosPage.addVideoToBookMarks();
     }
 
 }
